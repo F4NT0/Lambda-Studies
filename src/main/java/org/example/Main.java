@@ -1,5 +1,6 @@
 package org.example;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 interface Calculadora {
@@ -24,7 +25,7 @@ public class Main {
         HashMap<String, Integer> map = new HashMap<>();
         map.put("a", 1);
         map.put("b", 2);
-        map.forEach((k, v) -> System.out.println((k + ":" + v)));
+        map.forEach((k, v) -> System.out.println((k + ":" + v)));//a:1 b:2
 
         //arraylist using lambda expression
         ArrayList<String> names2 = new ArrayList<>();
@@ -64,6 +65,10 @@ public class Main {
         System.out.println("Removed element: " + set.remove("a"));
         set.forEach(element -> System.out.println(element));
 
+        List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
+        List<Integer> numerosPares = numeros.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
+        numerosPares.forEach(System.out::println);
+
         /**
          * functional interface is an interface that contains only one abstract method.
          * They can have only one functionality to exhibit.
@@ -84,6 +89,14 @@ public class Main {
         System.out.println(modulo.calcular(2, 3)); //2
 
         //example of collection with arraylist using lambda expression
-
+        ArrayList<Integer> numbers3 = new ArrayList<>();
+        numbers3.add(1);
+        numbers3.add(2);
+        numbers3.add(3);
+        numbers3.add(4);
+        numbers3.add(5);
+        numbers3.forEach(element -> System.out.println(element));
+        Collections.sort(numbers3, (a, b) -> b - a);
+        numbers3.forEach(element -> System.out.println(element));//5,4,3,2,1
     }
 }

@@ -17,4 +17,8 @@ public class MainTest
     {
         assertTrue( true );
     }
+
+    @Test
+    void main() {
+    }
 }
