@@ -1,4 +1,4 @@
-# $$\boxed{\Lambda \frak{ \space Lambda \space Expressions}}$$
+# $$\boxed{\color{orange}\Lambda \frak{ \space \color{magenta}Lambda \space \color{lightgreen}Expressions}}$$
 
 As expressões lambda são uma forma concisa de escrever funções anônimas. 
 Elas são usadas principalmente em contextos onde você precisa passar uma função como argumento para um método ou definir um comportamento personalizado para uma interface funcional.
@@ -47,9 +47,31 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
 
 <table align="center">
     <tr>
-        <td><img src="images/collections-pares.png"></td>
+        <td><img src="images/collections-pares.png" width="600"></td>
     </tr>
 </table>
+
+<summary>Detalhes sobre o código</summary>
+<details>
+    $\color{yellow}\sf Arrays$ é uma classe utilitária do Java com métodos prontos para lidar com vetores de diferentes tipos.
+    No exemplo passado, o método $\color{orange}\sf asList()$ transforma qualquer valor passado em uma lista de valores.
+    <br>
+    $$\sf \color{yellow}List\color{white}<\color{red}Integer\color{white}>\space numeros\space = \color{yellow}Arrays\color{white}.\color{orange}asList\color{white}(\color{lightblue}1,2,3,4,5,6,7);$$
+    <br>
+    Utilizamos o método $\sf \color{orange}stream()$ da classe <code>java.util.Collection</code> em Java, que retorna um fluxo (stream) de elementos presentes na coleção. O stream é uma sequência de elementos que pode ser manipulada e processada de forma funcional e declarativa.
+    <br>
+    O método $\sf \color{orange}filter()$ é um método da interface <code>Stream<T></code> no Java Streams API. Ele é usado para filtrar os elementos de um stream com base em um critério especificado por uma expressão lambda.
+    <br>
+    No nosso caso, a expressão Lambda definida verifica se os valores da lista tem o resto da divisão por 2 igual a zero, significando que esse valor é par (valores divididos por 2).
+    <br>
+    No final O método $\sf\color{orange}collect()$ é um método da interface <code>Stream<T></code> no Java Streams API. Ele é usado para coletar os elementos de um stream e armazená-los em uma coleção ou realizar outras operações de agregação.
+    <br>
+    Nessa operação de agragação usamos O $\sf\color{orange}Collectors$ é uma classe utilitária do Java <code>Streams API</code> que fornece diversos coletores pré-definidos para realizar operações de agregação em streams. Esses coletores são usados em conjunto com o método collect() para coletar os elementos de um stream em uma forma desejada, como uma lista, um conjunto, um mapa, entre outros.
+    Transformamos todos os dados em uma lista usando o método $\sf\color{orange}toList()$
+    <br>
+    $$\sf \color{yellow}List\color{white}<\color{red}Integer\color{white}>\space numerosPares = numeros.\color{yellow}stream().\color{orange}filter\color{white}(n -> n \% 2 == 0).\color{orange}collect\color{white}(\color{orange}Collectors.\color{white}toList()\color{white});$$
+
+</details>
 
 ---
 
@@ -59,6 +81,6 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
 
 <table align="center">
     <tr>
-        <td><img src="images/calculator-lambda.png"></td>
+        <td><img src="images/calculator-lambda.png" width="600"></td>
     </tr>
 </table>
