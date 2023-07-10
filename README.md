@@ -88,6 +88,52 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     </table>
 </details>
 
+<table align="center">
+    <tr>
+        <td><img src="images/collections-sort.png" width="600"></td>
+    </tr>
+</table>
+
+<summary>Detalhes sobre o código</summary>
+<details>
+    Primeiramente foi iniciado um ArrayList em nosso programa.
+    $\sf \color{yellow}ArrayList$ é uma classe fornecida pela biblioteca padrão do Java (java.util.ArrayList) que implementa a estrutura de dados de uma lista dinâmica baseada em array. Ela é uma implementação da interface List.
+    <table align="center">
+    <tr>
+        <td><img src="images/collections-arrayliststart.png" width="600"></td>
+    </tr>
+    </table>
+    Com a inicialização do ArrayList, podemos adicionar valores na variável `number3` utilizando o método $\sf \color{lightblue}add(value)$.
+    <table align="center">
+    <tr>
+        <td><img src="images/collections-arraylistadd.png" width="600"></td>
+    </tr>
+    </table>
+    Agora podemos utilizar o $\sf \color{orange}foreach$ do java para imprimir todos os valores da lista `number3`
+    <table align="center">
+    <tr>
+        <td><img src="images/collections-arraylistprint.png" width="600"></td>
+    </tr>
+    </table>
+    Podemos então utilizar os métodos da classe $\sf \color{orange}Collection$.
+    $\sf \color{lightblue}Collections.sort()$: É um método estático da classe Collections que ordena a lista fornecida como primeiro argumento. O segundo argumento é um objeto que implementa a interface Comparator, responsável por definir a lógica de comparação dos elementos.
+    (a, b) -> b - a: É uma expressão lambda que representa uma função de comparação personalizada. Neste caso, a função compara dois elementos a e b, subtraindo b de a.
+    <br>
+    Se o resultado da subtração for negativo, significa que a é menor que b, então a deve ser colocado antes de b na ordem.
+    <br>
+    Se o resultado for zero, significa que a é igual a b.
+    <br>
+    Se o resultado for positivo, significa que a é maior que b, então a deve ser colocado depois de b na ordem.
+    <br>
+    Portanto, usando (a, b) -> b - a, os elementos serão comparados em ordem decrescente.
+    <table align="center">
+    <tr>
+        <td><img src="images/collections-arraylistsort.png" width="600"></td>
+    </tr>
+    </table>
+    No fim imprimimos a lista novamente e ela estará colocado de forma decrescente após ter sido feito o `sort` nela seguindo a regra acima.
+</details>
+
 ---
 
 ## $$\color{orange} \sf interface$$
@@ -120,5 +166,5 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
         <td><img src="images/calculator-sum.png" width="600"></td>
     </tr>
     </table>
-    Com isso podemos criar o sistema de calcular possiveis de uma calculadora, só criar uma chamada da interface e trazer dois valores utilizando lambdas
+    Com isso podemos criar o sistema de calcular possiveis de uma calculadora, só criar uma chamada da interface e trazer dois valores utilizando lambdas.
 </details>
