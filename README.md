@@ -56,7 +56,11 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     $\color{yellow}\sf Arrays$ é uma classe utilitária do Java com métodos prontos para lidar com vetores de diferentes tipos.
     No exemplo passado, o método $\color{orange}\sf asList()$ transforma qualquer valor passado em uma lista de valores.
     <br>
-    $$\sf \color{yellow}List\color{white}<\color{red}Integer\color{white}>\space numeros\space = \color{yellow}Arrays\color{white}.\color{orange}asList\color{white}(\color{lightblue}1,2,3,4,5,6,7);$$
+    <table align="center">
+    <tr>
+        <td><img src="images/collections-arrays.png" width="600"></td>
+    </tr>
+    </table>
     <br>
     Utilizamos o método $\sf \color{orange}stream()$ da classe <code>java.util.Collection</code> em Java, que retorna um fluxo (stream) de elementos presentes na coleção. O stream é uma sequência de elementos que pode ser manipulada e processada de forma funcional e declarativa.
     <br>
@@ -69,8 +73,14 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     Nessa operação de agragação usamos O $\sf\color{orange}Collectors$ é uma classe utilitária do Java <code>Streams API</code> que fornece diversos coletores pré-definidos para realizar operações de agregação em streams. Esses coletores são usados em conjunto com o método collect() para coletar os elementos de um stream em uma forma desejada, como uma lista, um conjunto, um mapa, entre outros.
     Transformamos todos os dados em uma lista usando o método $\sf\color{orange}toList()$
     <br>
-    $$\sf \color{yellow}List\color{white}<\color{red}Integer\color{white}>\space numerosPares = numeros.\color{yellow}stream().\color{orange}filter\color{white}(n -> n \% 2 == 0).\color{orange}collect\color{white}(\color{orange}Collectors.\color{white}toList()\color{white});$$
-
+    <table align="center">
+    <tr>
+        <td><img src="images/collections-stream.png" width="600"></td>
+    </tr>
+    </table>
+    Para imprimir todos os valores, não precisa criar todo um for complexo sem necessidade, para isso podemos usar um for simplificado chamado $\color{yellow}foreach$ imprimindo cada elemento da coleção utilizando **sintaxe de referência de método**.
+    <br>
+    $\color{yellow}System.out::println$: É uma sintaxe de referência de método que representa o método `println` da classe `System.out`. Neste caso, estamos usando a referência de método para a função println sem passar explicitamente um argumento. Isso significa que cada elemento da coleção será passado automaticamente como argumento para o método `println, que é responsável por imprimir o valor no console.
 </details>
 
 ---
@@ -84,3 +94,26 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
         <td><img src="images/calculator-lambda.png" width="600"></td>
     </tr>
 </table>
+
+<summary>Detalhes sobre o código</summary>
+<details>
+    Uma $\sf \color{yellow}interface$ em Java é uma estrutura que define um conjunto de métodos e constantes que as classes podem implementar. Ela permite definir um contrato que as classes devem seguir ao implementar a interface.
+    <br>   
+    Foi criado dentro da interface um método somente declarado, chamado `Calcular()` que recebe dois inteiros como atributos.
+    <br>
+    <table align="center">
+    <tr>
+        <td><img src="images/calculator-interface.png" width="600"></td>
+    </tr>
+    </table>
+    <br>
+    Agora com essa estrutura, podemos criar definições para o que o método `Calcular` vai fazer em cada utilização da interface.
+    <br>
+    Podemos por exemplo criar uma utilização da interface que vai fazer uma soma com os valores dos tributos recebidos:
+    <table align="center">
+    <tr>
+        <td><img src="images/calculator-sum.png" width="600"></td>
+    </tr>
+    </table>
+    Com isso podemos criar o sistema de calcular possiveis de uma calculadora, só criar uma chamada da interface e trazer dois valores utilizando lambdas
+</details>

@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 
 
 interface Calculadora {
-    int calcular(int a, int b);
+    int Calcular(int a, int b);
 }
 public class Main {
     public static void main( String[] args ) {
@@ -78,15 +78,15 @@ public class Main {
          */
 
         Calculadora soma = (int a, int b) -> a + b;
-        System.out.println(soma.calcular(2, 3)); //5
+        System.out.println(soma.Calcular(2, 3)); //5
         Calculadora subtracao = (int a, int b) -> a - b;
-        System.out.println(subtracao.calcular(2, 3)); //-1
+        System.out.println(subtracao.Calcular(2, 3)); //-1
         Calculadora multiplicacao = (int a, int b) -> a * b;
-        System.out.println(multiplicacao.calcular(2, 3)); //6
+        System.out.println(multiplicacao.Calcular(2, 3)); //6
         Calculadora divisao = (int a, int b) -> a / b;
-        System.out.println(divisao.calcular(2, 3)); //0
+        System.out.println(divisao.Calcular(2, 3)); //0
         Calculadora modulo = (int a, int b) -> a % b;
-        System.out.println(modulo.calcular(2, 3)); //2
+        System.out.println(modulo.Calcular(2, 3)); //2
 
         //example of collection with arraylist using lambda expression
         ArrayList<Integer> numbers3 = new ArrayList<>();
