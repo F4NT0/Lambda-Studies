@@ -16,7 +16,9 @@ O uso de expressões lambda pode tornar o código mais legível e conciso, elimi
 
 ## $$\color{orange} \sf Collections$$
 
-<summary>Explicação de Collections</summary>
+#### $$\sf Exemplos \space de \space uso \space de \space Collections$$
+
+<summary>O que é Collections e seus métodos</summary>
 <details>
 Em Java, a classe `Collections` é uma classe utilitária que fornece métodos estáticos para trabalhar com coleções, como listas, conjuntos e mapas. Ela oferece funcionalidades adicionais para manipular, ordenar, pesquisar e realizar outras operações em coleções de forma conveniente. 
 
@@ -51,14 +53,14 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     </tr>
 </table>
 
-<summary>Detalhes sobre o código</summary>
+<summary>Explicação do código do List com Streams</summary>
 <details>
     $\color{yellow}\sf Arrays$ é uma classe utilitária do Java com métodos prontos para lidar com vetores de diferentes tipos.
     No exemplo passado, o método $\color{orange}\sf asList()$ transforma qualquer valor passado em uma lista de valores.
     <br>
     <table align="center">
     <tr>
-        <td><img src="images/collections/Arrays.png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/collections/Arrays.png" width="600"></td>
     </tr>
     </table>
     <br>
@@ -75,7 +77,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     <br>
     <table align="center">
     <tr>
-        <td><img src="images/collections/filters().png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/collections/filters().png" width="600"></td>
     </tr>
     </table>
     Para imprimir todos os valores, não precisa criar todo um for complexo sem necessidade, para isso podemos usar um for simplificado chamado $\color{yellow}foreach$ imprimindo cada elemento da coleção utilizando **sintaxe de referência de método**.
@@ -83,10 +85,12 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     $\color{yellow}System.out::println$: É uma sintaxe de referência de método que representa o método `println` da classe `System.out`. Neste caso, estamos usando a referência de método para a função println sem passar explicitamente um argumento. Isso significa que cada elemento da coleção será passado automaticamente como argumento para o método `println, que é responsável por imprimir o valor no console.
     <table align="center">
     <tr>
-        <td><img src="images/collections/foreach-sintax.png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/collections/foreach-sintax.png" width="600"></td>
     </tr>
     </table>
 </details>
+
+---
 
 <table align="center">
     <tr>
@@ -94,25 +98,25 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     </tr>
 </table>
 
-<summary>Detalhes sobre o código</summary>
+<summary>Explicação do código do ArrayList</summary>
 <details>
     Primeiramente foi iniciado um ArrayList em nosso programa.
     $\sf \color{yellow}ArrayList$ é uma classe fornecida pela biblioteca padrão do Java (java.util.ArrayList) que implementa a estrutura de dados de uma lista dinâmica baseada em array. Ela é uma implementação da interface List.
     <table align="center">
     <tr>
-        <td><img src="images/collections/newArrayList().png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/collections/newArrayList().png" width="600"></td>
     </tr>
     </table>
     Com a inicialização do ArrayList, podemos adicionar valores na variável `number3` utilizando o método $\sf \color{lightblue}add(value)$.
     <table align="center">
     <tr>
-        <td><img src="images/collections/add().png" width="300"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/collections/add().png" width="300"></td>
     </tr>
     </table>
     Agora podemos utilizar o $\sf \color{orange}foreach$ do java para imprimir todos os valores da lista `number3`
     <table align="center">
     <tr>
-        <td><img src="images/collections/foreachelement().png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/collections/foreachelement().png" width="600"></td>
     </tr>
     </table>
     Podemos então utilizar os métodos da classe $\sf \color{orange}Collection$.
@@ -128,7 +132,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     Portanto, usando (a, b) -> b - a, os elementos serão comparados em ordem decrescente.
     <table align="center">
     <tr>
-        <td><img src="images/collections/sort().png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/collections/sort().png" width="600"></td>
     </tr>
     </table>
     No fim imprimimos a lista novamente e ela estará colocado de forma decrescente após ter sido feito o `sort` nela seguindo a regra acima.
