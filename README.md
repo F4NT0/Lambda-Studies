@@ -146,7 +146,7 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
 
 <table align="center">
     <tr>
-        <td><img src="images/calculator-lambda.png" width="600"></td>
+        <td><img src="images/calculator/interface.png" width="600"></td>
     </tr>
 </table>
 
@@ -158,7 +158,7 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
     <br>
     <table align="center">
     <tr>
-        <td><img src="images/calculator-interface.png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/calculator/interfacesimples.png" width="600"></td>
     </tr>
     </table>
     <br>
@@ -167,7 +167,7 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
     Podemos por exemplo criar uma utilização da interface que vai fazer uma soma com os valores dos tributos recebidos:
     <table align="center">
     <tr>
-        <td><img src="images/calculator-sum.png" width="600"></td>
+        <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/calculator/lambdasum.png" width="600"></td>
     </tr>
     </table>
     Com isso podemos criar o sistema de calcular possiveis de uma calculadora, só criar uma chamada da interface e trazer dois valores utilizando lambdas.
