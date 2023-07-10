@@ -112,7 +112,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     Agora podemos utilizar o $\sf \color{orange}foreach$ do java para imprimir todos os valores da lista `number3`
     <table align="center">
     <tr>
-        <td><img src="images/collections-arraylistprint.png" width="600"></td>
+        <td><img src="images/collections-foreachlambda.png" width="600"></td>
     </tr>
     </table>
     Podemos então utilizar os métodos da classe $\sf \color{orange}Collection$.
@@ -128,7 +128,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     Portanto, usando (a, b) -> b - a, os elementos serão comparados em ordem decrescente.
     <table align="center">
     <tr>
-        <td><img src="images/collections-arraylistsort.png" width="600"></td>
+        <td><img src="images/collections-collectionsort.png" width="600"></td>
     </tr>
     </table>
     No fim imprimimos a lista novamente e ela estará colocado de forma decrescente após ter sido feito o `sort` nela seguindo a regra acima.
