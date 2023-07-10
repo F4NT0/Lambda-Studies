@@ -47,7 +47,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
 
 <table align="center">
     <tr>
-        <td><img src="images/collections-pares.png" width="600"></td>
+        <td><img src="images/collections/stream().png" width="600"></td>
     </tr>
 </table>
 
@@ -58,7 +58,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     <br>
     <table align="center">
     <tr>
-        <td><img src="images/collections-arrays.png" width="600"></td>
+        <td><img src="images/collections/Arrays.png" width="600"></td>
     </tr>
     </table>
     <br>
@@ -75,7 +75,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     <br>
     <table align="center">
     <tr>
-        <td><img src="images/collections-stream.png" width="600"></td>
+        <td><img src="images/collections/filters().png" width="600"></td>
     </tr>
     </table>
     Para imprimir todos os valores, não precisa criar todo um for complexo sem necessidade, para isso podemos usar um for simplificado chamado $\color{yellow}foreach$ imprimindo cada elemento da coleção utilizando **sintaxe de referência de método**.
@@ -83,14 +83,14 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     $\color{yellow}System.out::println$: É uma sintaxe de referência de método que representa o método `println` da classe `System.out`. Neste caso, estamos usando a referência de método para a função println sem passar explicitamente um argumento. Isso significa que cada elemento da coleção será passado automaticamente como argumento para o método `println, que é responsável por imprimir o valor no console.
     <table align="center">
     <tr>
-        <td><img src="images/collections-foreach.png" width="600"></td>
+        <td><img src="images/collections/foreach-sintax.png" width="600"></td>
     </tr>
     </table>
 </details>
 
 <table align="center">
     <tr>
-        <td><img src="images/collections-sort.png" width="600"></td>
+        <td><img src="images/collections/arraylist().png" width="600"></td>
     </tr>
 </table>
 
@@ -100,19 +100,19 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     $\sf \color{yellow}ArrayList$ é uma classe fornecida pela biblioteca padrão do Java (java.util.ArrayList) que implementa a estrutura de dados de uma lista dinâmica baseada em array. Ela é uma implementação da interface List.
     <table align="center">
     <tr>
-        <td><img src="images/collections-arrayliststart.png" width="600"></td>
+        <td><img src="images/collections/newArrayList().png" width="600"></td>
     </tr>
     </table>
     Com a inicialização do ArrayList, podemos adicionar valores na variável `number3` utilizando o método $\sf \color{lightblue}add(value)$.
     <table align="center">
     <tr>
-        <td><img src="images/collections-arraylistadd.png" width="600"></td>
+        <td><img src="images/collections/add().png" width="300"></td>
     </tr>
     </table>
     Agora podemos utilizar o $\sf \color{orange}foreach$ do java para imprimir todos os valores da lista `number3`
     <table align="center">
     <tr>
-        <td><img src="images/collections-foreachlambda.png" width="600"></td>
+        <td><img src="images/collections/foreachelement().png" width="600"></td>
     </tr>
     </table>
     Podemos então utilizar os métodos da classe $\sf \color{orange}Collection$.
@@ -128,7 +128,7 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     Portanto, usando (a, b) -> b - a, os elementos serão comparados em ordem decrescente.
     <table align="center">
     <tr>
-        <td><img src="images/collections-collectionsort.png" width="600"></td>
+        <td><img src="images/collections/sort().png" width="600"></td>
     </tr>
     </table>
     No fim imprimimos a lista novamente e ela estará colocado de forma decrescente após ter sido feito o `sort` nela seguindo a regra acima.

@@ -66,7 +66,10 @@ public class Main {
         set.forEach(element -> System.out.println(element));
 
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
-        List<Integer> numerosPares = numeros.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
+        List<Integer> numerosPares = numeros
+                                    .stream()
+                                    .filter(n -> n % 2 == 0)
+                                    .collect(Collectors.toList());
         numerosPares.forEach(System.out::println);
 
         /**
