@@ -81,6 +81,11 @@ Esses são apenas alguns exemplos dos métodos fornecidos pela classe `Collectio
     Para imprimir todos os valores, não precisa criar todo um for complexo sem necessidade, para isso podemos usar um for simplificado chamado $\color{yellow}foreach$ imprimindo cada elemento da coleção utilizando **sintaxe de referência de método**.
     <br>
     $\color{yellow}System.out::println$: É uma sintaxe de referência de método que representa o método `println` da classe `System.out`. Neste caso, estamos usando a referência de método para a função println sem passar explicitamente um argumento. Isso significa que cada elemento da coleção será passado automaticamente como argumento para o método `println, que é responsável por imprimir o valor no console.
+    <table align="center">
+    <tr>
+        <td><img src="images/collections-foreach.png" width="600"></td>
+    </tr>
+    </table>
 </details>
 
 ---
