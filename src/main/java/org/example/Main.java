@@ -13,13 +13,13 @@ public class Main {
         String[] names = {"Alexis", "Tim", "Kyleen", "KRISTY"};
         Arrays.sort(names, (first, second) -> first.compareToIgnoreCase(second));
         for (String name : names) {
-            System.out.println(name);
+            System.out.println(name); //Alexis, KRISTY, Kyleen, Tim
         }
 
         //find number using lambda expression
         int[] numbers = {1, 2, 3, 4, 5, 6};
         int sum = Arrays.stream(numbers).sum();
-        System.out.println(sum);
+        System.out.println(sum); //21
 
         //hashmap using lambda expression
         HashMap<String, Integer> map = new HashMap<>();
@@ -43,7 +43,7 @@ public class Main {
         numbers2.add(4);
         numbers2.add(5);
         numbers2.removeIf(n -> (n % 2 == 0));
-        numbers2.forEach(System.out::println);
+        numbers2.forEach(System.out::println); //1,3,5
 
         //queue example using lambda expression
         Queue<String> queue = new LinkedList<>();
@@ -101,5 +101,18 @@ public class Main {
         numbers3.forEach(element -> System.out.println(element));
         Collections.sort(numbers3, (a, b) -> b - a);
         numbers3.forEach(element -> System.out.println(element));//5,4,3,2,1
+
+        // search from a word in the list and use lambda expressions
+        List<String> locations = new ArrayList<>();
+        locations.add("New York");
+        locations.add("Los Angeles");
+        locations.add("Chicago");
+        locations.add("Denver");
+        locations.add("Las Vegas");
+        locations.stream()
+                    .filter((phrase) -> phrase.contains("New"))
+                    .map((local) -> local.toUpperCase())
+                    .sorted()
+                    .forEach(System.out::println);
     }
 }
