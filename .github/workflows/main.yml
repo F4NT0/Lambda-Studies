@@ -28,8 +28,8 @@ jobs:
         java-version: 11
         distribution: 'adopt'
     - name: Instalando Modificações no POM.xml
-      run: mvn clean install -B
+      run: mvn clean install
     - name: Compilando o Projeto
-      run: mvn compile -B
+      run: mvn compile
     - name: Rodar o Projeto entregando resultado
-      run: mvn exec:java -B
+      run: mvn exec:java
