@@ -8,6 +8,21 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/F4NT0/Lambda-Studies/main)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/F4NT0/Lambda-Studies)
 
+<summary>Como rodar o projeto</summary>
+<details>
+    Faça download e configure o $\color{yellow}\sf maven$ em seu computador.
+    <br>
+    Faça download e configure o $\color{yellow}\sf java \space 11$ em seu computador.
+    <br>
+    O comando para instalar os pacotes do projeto é abrindo um console no diretório principal (Lambda-Studies) e rodando o seguinte:
+    <br><br>
+    $$\boxed{\color{lightblue}\sf mvn \space \color{yellow}clean \space \color{lightgreen}install}$$
+    <br><br>
+    Após finalizar a instalação das bibliotecas necessária, no mesmo console rode o comando:
+    <br>
+    $$\boxed{\color{lightblue}\sf mvn \space \color{yellow}exec: \color{lightgreen}java}$$
+
+</details>
 
 ---
 
