@@ -22,10 +22,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Configurando o Java 1.8
-      uses: actions/setup-java@v1
+    - name: Configurando o Java 11
+      uses: actions/setup-java@v2
       with:
-        java-version: 1.8
+        java-version: 11
     - name: Instalando Modificações no POM.xml
       run: mvn clean install -B
     - name: Compilando o Projeto
