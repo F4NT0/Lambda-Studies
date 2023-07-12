@@ -21,7 +21,7 @@ public class Main {
     public static void main( String[] args ) {
 
         //sort string using lambda expression
-        System.out.print("\n" +  ANSI_RED + "Sort string using lambda expression: " + ANSI_RESET);
+        System.out.print("\n" +  "\u001B[31m" + "Sort string using lambda expression: " + ANSI_RESET);
         String[] names = {"Alexis", "Tim", "Kyleen", "KRISTY"};
         Arrays.sort(names, (first, second) -> first.compareToIgnoreCase(second));
         for (String name : names) {
