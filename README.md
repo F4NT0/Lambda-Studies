@@ -2,6 +2,12 @@
 
 ![Static Badge](https://img.shields.io/badge/11-orange?logo=openjdk&logoColor=orange&label=Java&labelColor=black)
 [![GitHub](https://img.shields.io/badge/github_actions-%23121011.svg?logo=github&logoColor=white)](https://github.com/F4NT0/Lambda-Studies/actions/workflows/main.yml)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/F4NT0/Lambda-Studies/main.yml)
+![GitHub](https://img.shields.io/github/license/F4NT0/Lambda-Studies)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/F4NT0/Lambda-Studies?color=orange)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/F4NT0/Lambda-Studies/main)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/F4NT0/Lambda-Studies)
+
 
 ---
 
