@@ -94,6 +94,20 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
 
 ## $$\color{magenta} \sf Classes \space e \space Métodos \space utilizados$$
 
-|Classe|Método|Uso|
-|---|---|---|
-|Arrays|sort()|`Arrays.sort(names,(first, second) -> first.compareToIgnoreCase(second))`
+|Classe|Método|Uso|Descrição
+|---|---|---|---|
+|Arrays|sort()|`Arrays.sort(names,(first, second) -> first.compareToIgnoreCase(second))`|permite ordenar os elementos de um array em ordem crescente.
+|String|compareToIgnoreCase()|`first.compareToIgnoreCase(second)`|permite comparar duas strings para determinar sua ordem lexicográfica, ignorando diferenças de maiúsculas e minúsculas.
+|Hashmap|put(key, value)|`map.put("a",1)`|adiciona o valor e a chave dentro de um Hashmap.
+|Hashmap|foreach()|`map.forEach((k, v) -> System.out.println((k + ":" + v)))`|percorre e imprimir os elementos do mapa.
+|ArrayList|foreach()|`names2.forEach(name -> System.out.println(name))`|percorre e imprimir os elementos do mapa.
+|ArrayList|foreach()|`numbers2.forEach(System.out::println)`|percorre e imprimir os elementos do mapa.
+|Queue|foreach()|`queue.forEach(element -> System.out.println(element))`|percorre e imprimir os elementos do mapa.
+|ArrayList|removeIf()|`numbers2.removeIf(n -> (n % 2 == 0))`|permite remover elementos de uma coleção com base em uma condição especificada. Nesse caso, a condição é definida por meio de uma expressão lambda.
+|Arrays|stream()|`Arrays.stream(numbers).sum()`|usado para criar um fluxo (stream) a partir do array numbers. Um fluxo é uma sequência de elementos que permite realizar operações em coleções de dados de forma mais concisa e funcional.
+|Arrays|sum()|`Arrays.stream(numbers).sum()`|chamado para realizar a operação de soma de todos os elementos do fluxo
+|List|stream()|`numeros.stream().filter(n -> n % 2 == 0).collect(Collectors.toList())`|usado para criar um fluxo (stream) a partir do array numbers. Um fluxo é uma sequência de elementos que permite realizar operações em coleções de dados de forma mais concisa e funcional.
+|List|filter()|`numeros.stream().filter(n -> n % 2 == 0).collect(Collectors.toList())`|o método filter() é aplicado ao fluxo para filtrar apenas os elementos que atendem a uma determinada condição. Nesse caso, a condição é definida por meio da expressão lambda (n -> n % 2 == 0), que verifica se o número n é divisível por 2, ou seja, se é um número par.
+|List|collect(Collectors.toList())|`numeros.stream().filter(n -> n % 2 == 0).collect(Collectors.toList())`|é utilizado para coletar os elementos filtrados e retornar uma nova lista contendo esses elementos.
+|List|map()|`stream().filter((phrase) -> phrase.contains("New")).map((local) -> local.toUpperCase()).sorted().forEach(System.out::println)`|usado para transformar cada string restante em letras maiúsculas, aplicando a função toUpperCase() a cada elemento do fluxo.
+|List|sorted()|`stream().filter((phrase) -> phrase.contains("New")).map((local) -> local.toUpperCase()).sorted().forEach(System.out::println)`|utilizado para ordenar as strings em ordem alfabética ou lexicográfica.

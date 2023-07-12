@@ -53,7 +53,7 @@ public class Main {
         queue.add("d");
         queue.forEach(element -> System.out.println(element));
         System.out.println("Removed element: " + queue.remove());
-        queue.forEach(element -> System.out.println(element));
+        queue.forEach(element -> System.out.println(element));//b,c,d
 
         //hashset example using lambda expression
         HashSet<String> set = new HashSet<>();
@@ -113,6 +113,6 @@ public class Main {
                     .filter((phrase) -> phrase.contains("New"))
                     .map((local) -> local.toUpperCase())
                     .sorted()
-                    .forEach(System.out::println);
+                    .forEach(System.out::println);//NEW YORK
     }
 }
