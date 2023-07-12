@@ -33,7 +33,7 @@ public class Main {
         names2.add("Tim");
         names2.add("Kyleen");
         names2.add("KRISTY");
-        names2.forEach(name -> System.out.println(name));
+        names2.forEach(name -> System.out.println(name));//Alexis, Tim, Kyleen, KRISTY
 
         //collection example to remove a number from a list using lambda expression
         ArrayList<Integer> numbers2 = new ArrayList<>();
@@ -70,7 +70,7 @@ public class Main {
                                     .stream()
                                     .filter(n -> n % 2 == 0)
                                     .collect(Collectors.toList());
-        numerosPares.forEach(System.out::println);
+        numerosPares.forEach(System.out::println);//2,4,6
 
         /**
          * functional interface is an interface that contains only one abstract method.
