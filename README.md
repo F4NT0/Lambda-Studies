@@ -1,5 +1,10 @@
 # $$\boxed{\color{orange}\Lambda \frak{ \space \color{magenta}Lambda \space \color{lightgreen}Expressions}}$$
 
+![Static Badge](https://img.shields.io/badge/11-orange?logo=openjdk&logoColor=orange&label=Java&labelColor=black)
+![GitHub](https://img.shields.io/badge/github_actions-%23121011.svg?logo=github&logoColor=white)
+
+---
+
 As expressões lambda são uma forma concisa de escrever funções anônimas. 
 Elas são usadas principalmente em contextos onde você precisa passar uma função como argumento para um método ou definir um comportamento personalizado para uma interface funcional.
 <br><br>
@@ -94,15 +99,14 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
 
 ## $$\color{magenta} \sf Classes \space e \space Métodos \space utilizados$$
 
-|Classe|Método|Uso|Descrição
-|---|---|---|---|
+|Classe|Método|Descrição
+|---|---|---|
 |Arrays|sort()|permite ordenar os elementos de um array em ordem crescente.
 |String|compareToIgnoreCase()|permite comparar duas strings para determinar sua ordem lexicográfica, ignorando diferenças de maiúsculas e minúsculas.
 |Hashmap|put(key, value)|adiciona o valor e a chave dentro de um Hashmap.
-|Hashmap|foreach()|percorre e imprimir os elementos do mapa.
-|ArrayList|foreach()|percorre e imprimir os elementos do mapa.
-|ArrayList|foreach()|percorre e imprimir os elementos do mapa.
-|Queue|foreach()|percorre e imprimir os elementos do mapa.
+|Hashmap|foreach()|percorre e imprimir os elementos do HashMap.
+|ArrayList|foreach()|percorre e imprimir os elementos do ArrayList.
+|Queue|foreach()|percorre e imprimir os elementos da Fila.
 |ArrayList|removeIf()|permite remover elementos de uma coleção com base em uma condição especificada. Nesse caso, a condição é definida por meio de uma expressão lambda.
 |Arrays|stream()|usado para criar um fluxo (stream) a partir do array numbers. Um fluxo é uma sequência de elementos que permite realizar operações em coleções de dados de forma mais concisa e funcional.
 |Arrays|sum()|chamado para realizar a operação de soma de todos os elementos do fluxo
@@ -111,3 +115,7 @@ Uma interface com lambda em Java refere-se ao uso de uma expressão lambda para 
 |List|collect(Collectors.toList())|é utilizado para coletar os elementos filtrados e retornar uma nova lista contendo esses elementos.
 |List|map()|usado para transformar cada string restante em letras maiúsculas, aplicando a função toUpperCase() a cada elemento do fluxo.
 |List|sorted()|utilizado para ordenar as strings em ordem alfabética ou lexicográfica.
+
+---
+
+
