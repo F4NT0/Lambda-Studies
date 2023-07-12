@@ -26,6 +26,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: 11
+        distribution: 'adopt'
     - name: Instalando Modificações no POM.xml
       run: mvn clean install -B
     - name: Compilando o Projeto
