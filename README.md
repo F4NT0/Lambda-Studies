@@ -1,7 +1,7 @@
 # $$\boxed{\color{orange}\Lambda \frak{ \space \color{magenta}Lambda \space \color{lightgreen}Expressions}}$$
 
 ![Static Badge](https://img.shields.io/badge/11-orange?logo=openjdk&logoColor=orange&label=Java&labelColor=black)
-![GitHub](https://img.shields.io/badge/github_actions-%23121011.svg?logo=github&logoColor=white)
+[![GitHub](https://img.shields.io/badge/github_actions-%23121011.svg?logo=github&logoColor=white)](https://github.com/F4NT0/Lambda-Studies/actions/workflows/main.yml)
 
 ---
 
