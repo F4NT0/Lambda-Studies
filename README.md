@@ -10,9 +10,9 @@
 
 <summary>Como rodar o projeto</summary>
 <details>
-    Faça [download](https://maven.apache.org/download.cgi?.) e [configure](https://mkyong.com/maven/how-to-install-maven-in-windows/) o $\color{lightgreen}\sf maven$ em seu computador.
+    Faça <a href="https://maven.apache.org/download.cgi?.">Download</a> e <a href="https://mkyong.com/maven/how-to-install-maven-in-windows/">Configure</a> o $\color{lightgreen}\sf maven$ em seu computador.
     <br>
-    Faça [download](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) e [configure](https://windowsreport.com/install-java-windows-11/) o $\color{orange}\sf Java \space 11$ em seu computador.
+    Faça <a href="https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html">Download</a> e <a href="https://windowsreport.com/install-java-windows-11/">Configure</a> o $\color{orange}\sf Java \space 11$ em seu computador.
     <br>
     O comando para instalar os pacotes do projeto é abrindo um console no diretório principal (Lambda-Studies) e rodando o seguinte:
     <br><br>
