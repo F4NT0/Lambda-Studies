@@ -23,20 +23,30 @@
     $$\boxed{\color{lightblue}\sf mvn \space \color{yellow}exec: \color{lightgreen}java}$$
     <br>
     Deve apresentar no console a seguinte saída:
+    <br>
     <table align="center">
         <tr>
             <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/exit.png" width="600"></td>
         </tr>
     </table>
+    <br>
     Se o seu console possui saída de cores, a saída vai estar da seguinte forma:
+    <br>
     <table align="center">
         <tr>
             <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/exit-colored.png" width="600"></td>
         </tr>
     </table>
+    <br>
     Este projeto possui um Github Actions para compilar o projeto se não puder compilar localmente, uma saída de exemplo pode ser visto no workflow.
-
-
+    <br>
+    Só precisa enviar um commit para a branch `main` e acessar a etapa de compilação chamada $\color{orange}\sf Rodar \space o \space Projeto \space entregando \space resultado$ na linha 229 se encontra a saída do programa compilado.
+    <br>
+    <table align="center">
+        <tr>
+            <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/github-actions.png" width="600"></td>
+        </tr>
+    </table>
 </details>
 
 ---
