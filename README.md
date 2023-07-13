@@ -23,7 +23,19 @@
     $$\boxed{\color{lightblue}\sf mvn \space \color{yellow}exec: \color{lightgreen}java}$$
     <br>
     Deve apresentar no console a seguinte saída:
-    <img src="">
+    <table align="center">
+        <tr>
+            <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/exit.png" width="600"></td>
+        </tr>
+    </table>
+    Se o seu console possui saída de cores, a saída vai estar da seguinte forma:
+    <table align="center">
+        <tr>
+            <td><img src="https://github.com/F4NT0/Lambda-Studies/blob/main/images/exit-colored.png" width="600"></td>
+        </tr>
+    </table>
+    Este projeto possui um Github Actions para compilar o projeto se não puder compilar localmente, uma saída de exemplo pode ser visto no workflow.
+
 
 </details>
 
